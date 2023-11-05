@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*===================MENU==========================*/
+
+#borde_inicial{
+    background-color: #008DC5
+}
+ #menu a {
+     font-size: 20px !important;
+     font-weight: bold ;
+     color:#ee9a5e;
+     transition: color 0.3;
+    }
+
+.text-color{
+    color: #1997BE;
+}
+
+#menu a:hover{
+    color: #008DC5;
+}
+  
+/*NOSOTROS*/
+  #nosotros {
+    margin: 40px; 
+    text-align: justify;
+  }   
+ 
+
+.carousel-inner {
+    max-height:29rem !important;
+
+
+}
+
+
+/* efecto de opacidad en las imágenes */
+.img-effect {
+    transition: opacity 0.3s; /
+  }
+  
+  .img-effect:hover {
+    opacity: 0.7; /
+  }
+  
+
+
+.custom-list {
+    line-height: 2;
+}
+
+
+/*===================SECCION final==========================*/
+#local {
+    margin-top: 5%;
+    background-color: #fa903352;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%; 
+}
+
+.wrapper-local {
+    margin-left: 5%; 
+    padding-top: 2%; 
+}
+
+/*===========================SECCION final==================================*/
+#numeros-local {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#numeros-local div {
+    padding: 0 2% 0 0; 
+    text-align: left;
+    height: 4em; /
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 0.1em solid #3f3f3f; 
+}
+
+#numeros-local div:not(:first-child) {
+    padding-left: 2%; 
+}
+
+#numeros-local p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+
+#contenedor-formulario {
+    background: #fbfafa;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    max-width: 500px; 
+    margin-top: 2%; 
+    display: inline-block; 
+}
+
+
+
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+
+
+
+/*mas estilos para el formulario*/
+#contenedor-formulario input[type="text"],
+#contenedor-formulario input[type="email"],
+#contenedor-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contenedor-formulario button[type="submit"] {
+    background: #2f83e3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+#contenedor-formulario button[type="submit"]:hover {
+    background-color: #1c6ab7;
+}
+
+#contenedor-formulario label {
+    font-weight: bold;
+}
+
+#contenedor-formulario p {
+    color: #ee9a5e;
+    margin: 10px 0;
+}
+
+#contenedor-formulario i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+
+
+
+
+
+/*=========================FOOTER================================*/
+
+
+.footer {
+    background: #018EC6;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ee9a5e;
+}
+
+.copyright {
+    color: #f3f3f3;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: -2px;
+}
+
+
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #servicios{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width: 10%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
